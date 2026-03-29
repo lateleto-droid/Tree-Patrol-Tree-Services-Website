@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react';
 import Image from 'next/image';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Award } from 'lucide-react';
 
 export default function About() {
   const points = [
@@ -36,7 +36,8 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
             </div>
             {/* Floating Badge */}
-            <div className="absolute -bottom-8 -right-8 bg-secondary text-secondary-foreground p-6 rounded-2xl shadow-xl border-4 border-gray-50 hidden md:block">
+            <div className="absolute -bottom-8 -right-8 bg-secondary text-secondary-foreground p-6 rounded-2xl shadow-xl border-4 border-gray-50 hidden md:flex flex-col items-center text-center">
+              <Award className="w-10 h-10 mb-2" />
               <p className="text-4xl font-extrabold mb-1">10+</p>
               <p className="text-sm font-bold uppercase tracking-wider">Years of<br/>Experience</p>
             </div>
